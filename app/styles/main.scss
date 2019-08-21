@@ -1,0 +1,187 @@
+@import "variables";
+@import "mixin";
+$title-margin: 0 0 (7rem / $font-size);
+$text-margin: 0 0 (21rem / $font-size);
+$pcolor:rgba(255, 255, 255, 0.7);
+
+html,
+body {
+  height: 100%;
+  font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $font-size + px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  background: $bgdark;
+  color: #fff;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  background-color:#000;
+  background: url("../assets/img/startup-1.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .header {
+    // flex: 1 0 0;
+    padding: (21rem / $font-size) 0;
+    font-size: (15rem / $font-size);
+    .navbar {
+      padding: 0;
+    }
+    .navbar-brand {
+      padding: (12rem / $font-size);
+      color: #28669f;
+      margin: 0;
+      font-size: (17.5rem / $font-size);
+    }
+    a {
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+  .jumbotron {
+    flex: 2 0 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: transparent;
+    h1 {
+      font-weight: 450;
+      font-size: (35rem / $font-size);
+      margin: $title-margin;
+    }
+    p {
+      margin: $text-margin;
+      font-size: (21rem / $font-size);
+      color: $pcolor;
+    }
+    @at-root button.dm.ox.ap {
+      background-color: #2595ff;
+      font-size: (18rem / $font-size);
+      padding: (12rem / $font-size) (50rem / $font-size);
+    }
+  }
+}
+
+.section2 {
+  $title-color: #2d3238;
+  $ctx-color: #6c6f73;
+
+  color: $ctx-color;
+  padding-top: (100rem / $font-size);
+  line-height: 1.5rem;
+  h2,
+  h5 {
+    margin: $title-margin;
+    color: $title-color;
+  }
+  div.col-md.d-md-block {
+    max-width: 41.66667%;
+    height: 100%;
+    // align-self: flex-end;
+  }
+  @at-root h6.an.axv {
+    font-size: (14rem / $font-size);
+    color: #bec8ce;
+    margin: 0 0 (5rem / $font-size);
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: (28rem / $font-size);
+  }
+  @at-root p.al.agw {
+    font-size: (18.2rem / $font-size);
+    margin: $text-margin;
+    line-height: 2rem;
+  }
+  h5 {
+    font-size: (17.5rem / $font-size);
+  }
+  .fr {
+    font-size: (15rem / $font-size);
+    a.ayc {
+      color: #2595ff;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .section2 .col-md.gf {
+    margin-left: (20rem / $font-size);
+  }
+}
+
+.section3 {
+  background: $bgdark;
+  padding: 100px 1rem;
+  color: #fff;
+  overflow: hidden;
+
+  @media (min-width:768px) {
+    .container .code{
+      width:100vw !important;
+    }
+  }
+  @media (max-width: 768px) {
+    button.oz {
+      width:100%;
+    }
+  }
+
+  pre.ac{
+    color:#6ea4cf;
+    width:100%;
+    span{
+      color:#8496a5;
+    }
+    padding-top:1rem;
+    line-height: 1.55rem;
+  }
+}
+
+.section4{
+  background-color:#000;
+  background: url("../assets/img/startup-3.jpg") no-repeat center/cover;
+  width:100vw;
+  height: 100vh;
+  .agw{
+    line-height: 2.5rem;
+  }
+  .an{
+    color:$pcolor;
+  }
+}
+
+.section5{
+  img{
+    // line-height: 1.5rem;
+    display: inline-block;
+    margin:0 (10rem/$font-size) (30rem/$font-size);
+  }
+  .container{
+    margin-bottom: (-30rem/$font-size);
+  }
+}

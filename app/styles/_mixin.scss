@@ -1,0 +1,11 @@
+%test{
+  border:1px solid red;
+}
+
+@mixin test($color:red,$size:1px) {
+  border:$size solid $color;
+}
+
+@mixin bg($color:red) {
+  background: $color;
+}
