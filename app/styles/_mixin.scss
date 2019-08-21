@@ -9,3 +9,14 @@
 @mixin bg($color:red) {
   background: $color;
 }
+
+@mixin placeholder-img($bg:#000){
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $bg;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
